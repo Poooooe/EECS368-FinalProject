@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Connect 4</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body onload="beginGame();">
+    <div>
+        Winner: <span id=winnerInfo></span>
+    </div>
+
+    <div id="board">
+        <div class="row">
+            <div class="cell" id="cell00" onclick="chip(0)"></div>
+            <div class="cell" id="cell01" onclick="chip(1)"></div>
+            <div class="cell" id="cell02" onclick="chip(2)"></div>
+            <div class="cell" id="cell03" onclick="chip(3)"></div>
+            <div class="cell" id="cell04" onclick="chip(4)"></div>
+            <div class="cell" id="cell05" onclick="chip(5)"></div>
+            <div class="cell" id="cell06" onclick="chip(6)"></div>
+        </div>
+        <div class="row">
+            <div class="cell" id="cell10" onclick="chip(0)"></div>
+            <div class="cell" id="cell11" onclick="chip(1)"></div>
+            <div class="cell" id="cell12" onclick="chip(2)"></div>
+            <div class="cell" id="cell13" onclick="chip(3)"></div>
+            <div class="cell" id="cell14" onclick="chip(4)"></div>
+            <div class="cell" id="cell15" onclick="chip(5)"></div>
+            <div class="cell" id="cell16" onclick="chip(6)"></div>
+        </div>
+        <div class="row">
+            <div class="cell" id="cell20" onclick="chip(0)"></div>
+            <div class="cell" id="cell21" onclick="chip(1)"></div>
+            <div class="cell" id="cell22" onclick="chip(2)"></div>
+            <div class="cell" id="cell23" onclick="chip(3)"></div>
+            <div class="cell" id="cell24" onclick="chip(4)"></div>
+            <div class="cell" id="cell25" onclick="chip(5)"></div>
+            <div class="cell" id="cell26" onclick="chip(6)"></div>
+        </div>
+        <div class="row">
+            <div class="cell" id="cell30" onclick="chip(0)"></div>
+            <div class="cell" id="cell31" onclick="chip(1)"></div>
+            <div class="cell" id="cell32" onclick="chip(2)"></div>
+            <div class="cell" id="cell33" onclick="chip(3)"></div>
+            <div class="cell" id="cell34" onclick="chip(4)"></div>
+            <div class="cell" id="cell35" onclick="chip(5)"></div>
+            <div class="cell" id="cell36" onclick="chip(6)"></div>
+        </div>
+        <div class="row">
+            <div class="cell" id="cell40" onclick="chip(0)"></div>
+            <div class="cell" id="cell41" onclick="chip(1)"></div>
+            <div class="cell" id="cell42" onclick="chip(2)"></div>
+            <div class="cell" id="cell43" onclick="chip(3)"></div>
+            <div class="cell" id="cell44" onclick="chip(4)"></div>
+            <div class="cell" id="cell45" onclick="chip(5)"></div>
+            <div class="cell" id="cell46" onclick="chip(6)"></div>
+        </div>
+        <div class="row">
+            <div class="cell" id="cell50" onclick="chip(0)"></div>
+            <div class="cell" id="cell51" onclick="chip(1)"></div>
+            <div class="cell" id="cell52" onclick="chip(2)"></div>
+            <div class="cell" id="cell53" onclick="chip(3)"></div>
+            <div class="cell" id="cell54" onclick="chip(4)"></div>
+            <div class="cell" id="cell55" onclick="chip(5)"></div>
+            <div class="cell" id="cell56" onclick="chip(6)"></div>
+        </div>
+    </div>
+    <br>
+
+    <input id="resetButton" type="button" value="Reset" onclick="resetBoard()" />
+
+    <script src="connect4.js" type="text/javascript"></script>
+
+</body>
+
+</html>
